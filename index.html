@@ -103,6 +103,27 @@
 
   .contact:hover { text-decoration: none; opacity: 0.9; }
 
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1.5px solid oklch(0.22 0.02 60 / 0.3);
+    color: var(--fg);
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .linkedin:hover { text-decoration: none; opacity: 0.75; }
+
   footer {
     padding: 32px 24px;
     text-align: center;
@@ -126,7 +147,10 @@
     <div class="hero">
       <h1>We're building the future of sports technology.</h1>
       <p>Sawdust Labs is a sports-focused technology company. We're heads-down at work — check back soon to see what we're building.</p>
-      <a class="contact" href="mailto:contact@sawdust.app">Contact us</a>
+      <div class="actions">
+        <a class="contact" href="mailto:contact@sawdust.app">Contact us</a>
+        <a class="linkedin" href="https://www.linkedin.com/company/sawdust-labs/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </main>
 
