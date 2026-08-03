@@ -74,7 +74,7 @@
   }
 
   .doc {
-    max-width: 720px;
+    max-width: 760px;
     margin: 0 auto;
   }
 
@@ -85,6 +85,15 @@
     letter-spacing: -0.01em;
     line-height: 1.2;
     margin: 24px 0 8px;
+  }
+
+  .doc h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    color: var(--fg);
+    margin: 40px 0 14px;
   }
 
   .product-label {
@@ -101,13 +110,32 @@
     margin: 0 0 40px;
   }
 
-  .placeholder {
-    border: 1px dashed var(--border);
-    border-radius: 8px;
-    padding: 32px;
-    font-size: 15px;
+  .doc p {
+    font-size: 15.5px;
     line-height: 1.7;
     color: var(--fg-soft);
+    margin: 0 0 16px;
+  }
+
+  .doc p strong {
+    color: var(--fg);
+    font-weight: 700;
+  }
+
+  .doc ul {
+    margin: 0 0 16px;
+    padding-left: 22px;
+  }
+
+  .doc li {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--fg-soft);
+    margin-bottom: 6px;
+  }
+
+  .doc a {
+    text-decoration: underline;
   }
 
   footer {
@@ -138,9 +166,59 @@
       <h1>Privacy Policy</h1>
       <p class="effective-date">Effective date: August 2, 2026</p>
 
-      <div class="placeholder">
-        Placeholder — the full text of the Crossbar Privacy Policy will go here.
-      </div>
+      <p>This Privacy Policy explains how Sawdust Labs (&ldquo;Sawdust Labs,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) handles information in connection with the Crossbar mobile application (the &ldquo;App&rdquo;). This Policy should be read alongside our <a href="/products/crossbar/terms-of-service/">Terms of Service</a>.</p>
+
+      <p>We built Crossbar to keep your practice video on your device, not on our servers. This Policy is intended to reflect that design plainly — most of what you&rsquo;d expect a privacy policy to cover about server-side data handling simply doesn&rsquo;t apply, because we don&rsquo;t have your video.</p>
+
+      <h2>1. Information We Do Not Collect</h2>
+      <p>We do not collect, upload, host, or have any access to:</p>
+      <ul>
+        <li>Video or audio clips you record in the App — these are stored locally on your device only.</li>
+        <li>Account information such as name, email, or password — the App does not require or support account creation or sign-in.</li>
+        <li>Precise or approximate location data.</li>
+        <li>Contacts, photo library contents, or other device data beyond what&rsquo;s described in Section 2.</li>
+      </ul>
+
+      <h2>2. Information We Do Collect</h2>
+      <p><strong>2.1 Camera and microphone access.</strong> The App requests camera and microphone permissions solely to let you record practice clips and use voice-triggered capture. This access is used entirely on-device to power the App&rsquo;s core recording feature. We do not receive or transmit the resulting audio or video.</p>
+      <p><strong>2.2 Crash and diagnostic data.</strong> We use Sentry, a third-party crash-reporting and diagnostics service, to help us identify and fix bugs. When the App crashes or encounters an error, Sentry may collect technical information such as device model, operating system version, app version, crash logs, and general performance data. This data is used only to diagnose and fix problems with the App — it is not linked to any account (since none exists) and does not include your video content.</p>
+      <p><strong>2.3 App Store data.</strong> Apple may collect certain information when you download the App through the App Store, governed by Apple&rsquo;s own privacy policy, which is separate from this one.</p>
+
+      <h2>3. How We Use Information</h2>
+      <p>The limited technical data described in Section 2.2 is used only to:</p>
+      <ul>
+        <li>Identify, diagnose, and fix crashes and bugs;</li>
+        <li>Understand general app stability and performance; and</li>
+        <li>Improve the reliability of the App over time.</li>
+      </ul>
+      <p>We do not use this data for advertising, do not sell it, and do not use it to build profiles of individual users.</p>
+
+      <h2>4. How Information Is Shared</h2>
+      <p>We share diagnostic data only with Sentry, our crash-reporting provider, acting as a service provider/processor on our behalf. We do not sell personal information, and we do not share data with advertisers or data brokers. We may disclose information if required to do so by law, or to protect the rights, safety, or property of Sawdust Labs, our users, or the public.</p>
+
+      <h2>5. Data Retention</h2>
+      <p><strong>5.1 Video content.</strong> Your recorded clips remain on your device under your control. Deleting a clip, uninstalling the App, or resetting your device removes it from local storage. We have no ability to retain, recover, or delete this content on your behalf because we never had it.</p>
+      <p><strong>5.2 Diagnostic data.</strong> Crash and diagnostic data collected via Sentry is retained according to Sentry&rsquo;s standard retention periods, after which it is deleted or de-identified. Contact us if you&rsquo;d like more detail on current retention settings.</p>
+
+      <h2>6. Children&rsquo;s Privacy</h2>
+      <p>Crossbar is designed to be usable by athletes of all ages, including minors, typically under the supervision of a parent, guardian, or coach. Because the App does not collect video content, account information, or other personal information from users beyond the limited technical diagnostic data described in Section 2.2, we do not knowingly collect personal information from children in a manner that would require parental consent under the Children&rsquo;s Online Privacy Protection Act (COPPA) or similar laws. If we introduce features in the future that change this (such as cloud sync or accounts), we will update this Policy and implement appropriate consent mechanisms before doing so.</p>
+
+      <h2>7. Your Choices and Rights</h2>
+      <p><strong>7.1 Permissions.</strong> You can revoke camera or microphone access at any time through your device&rsquo;s Settings app. Doing so will prevent the App&rsquo;s core recording features from working.</p>
+      <p><strong>7.2 Diagnostic data.</strong> You may be able to limit diagnostic/crash data collection through your device&rsquo;s system-level privacy or analytics settings, depending on your device and OS version.</p>
+      <p><strong>7.3 Regional privacy rights.</strong> Depending on where you live, you may have rights to request access to, correction of, or deletion of personal information we hold about you (for example, under the CCPA or GDPR). Because we collect only limited, non-identifying diagnostic data, our ability to identify data tied to a specific individual is inherently limited — but you can still contact us at the address below with any request, and we will respond as required by applicable law.</p>
+
+      <h2>8. Data Security</h2>
+      <p>Because your video content never leaves your device, its security depends primarily on your device&rsquo;s own security (passcode, encryption, OS updates). We take reasonable measures to protect the limited diagnostic data we do receive, but no method of electronic storage or transmission is completely secure.</p>
+
+      <h2>9. International Users</h2>
+      <p>Sawdust Labs is based in the United States. If you use the App from outside the United States, any diagnostic data described in Section 2.2 may be processed in the United States or other countries where our service providers operate. Governing jurisdiction for this Policy is the State of California.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time, particularly as the App&rsquo;s features evolve (for example, if we introduce optional cloud storage or accounts). If we make material changes, we will provide reasonable notice through the App or another reasonable method before the changes take effect.</p>
+
+      <h2>11. Contact Us</h2>
+      <p>Questions about this Privacy Policy, or requests regarding your data, can be directed to: <a href="mailto:legal@sawdust.app">legal@sawdust.app</a></p>
     </div>
   </main>
 
